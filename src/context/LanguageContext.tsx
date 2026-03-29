@@ -20,7 +20,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     si: siTranslations,
   };
 
-  const t = (key: string, options?: { returnObjects?: boolean }): any => {
+  const t = (key: string, _options?: { returnObjects?: boolean }): any => {
     const keys = key.split('.');
     let value = translations[language];
     for (const k of keys) {
