@@ -5,8 +5,9 @@ import {
     ArrowRight, Map, Eye, Compass, BookOpen,
     CheckCircle, Settings, Monitor, HeartPulse, Building, Coffee, Leaf, Palette,
     BarChart2, Globe, CalendarCheck, Lightbulb, Star, ChevronRight, GraduationCap,
-    TrendingUp, Users, FileText, Sparkles
+    TrendingUp, Users, FileText
 } from 'lucide-react';
+import HeroBanner from '../components/layout/HeroBanner';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -52,53 +53,8 @@ const Home: React.FC = () => {
     return (
         <div className="home-page">
 
-            {/* ─── HERO ─────────────────────────────────────────── */}
-            <section className="hero-premium">
-                {/* Background decorations */}
-                <div className="hero-blob hero-blob-1" />
-                <div className="hero-blob hero-blob-2" />
-                <div className="hero-grid-overlay" />
-
-                <div className="container hero-inner">
-                    <div className="hero-badge">
-                        <Sparkles size={14} />
-                        <span>Sri Lanka's #1 Career Guidance Platform</span>
-                    </div>
-
-                    <h1 className="hero-heading">
-                        {t('home.hero_title')}
-                        <span className="hero-heading-highlight"> {t('home.hero_title_highlight')}</span>
-                    </h1>
-
-                    <p className="hero-subheading">{t('home.hero_subtitle')}</p>
-
-
-                    <div className="hero-cta-group">
-                        <Link to="/pathway-finder" className="cta-btn cta-btn-primary">
-                            {t('home.cta_start')} <ArrowRight size={18} />
-                        </Link>
-                        <Link to="/opportunities" className="cta-btn cta-btn-ghost">
-                            {t('home.cta_explore')}
-                        </Link>
-                    </div>
-
-                    {/* Floating stat pills */}
-                    <div className="hero-pill pill-left">
-                        <GraduationCap size={18} className="pill-icon" />
-                        <div>
-                            <strong>50+ Career Fields</strong>
-                            <span>Explored & Mapped</span>
-                        </div>
-                    </div>
-                    <div className="hero-pill pill-right">
-                        <Star size={18} className="pill-icon star" />
-                        <div>
-                            <strong>100% Free</strong>
-                            <span>Trusted Guidance</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/* ─── HERO BANNER ──────────────────────────────────── */}
+            <HeroBanner />
 
             {/* ─── QUICK ACTIONS ────────────────────────────────── */}
             <section className="quick-section">

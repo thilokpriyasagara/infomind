@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PlayCircle, FileQuestion, ChevronDown, ChevronUp, ExternalLink, GraduationCap, Wrench, Briefcase, Plus, Minus, Calendar } from 'lucide-react';
+import { FileQuestion, ChevronDown, ChevronUp, ExternalLink, GraduationCap, Wrench, Briefcase, Plus, Minus, Calendar } from 'lucide-react';
 import './Resources.css';
 
 const FAQ_CATEGORIES = [
@@ -279,14 +279,31 @@ const Resources: React.FC = () => {
             <section className="mb-12">
                 <h2 className="resources-section-heading">Video Guides</h2>
                 <div className="grid-3-cols">
-                    {[1, 2, 3].map(i => (
-                        <div key={i} className="video-card box-shadow-sm">
-                            <div className="video-thumbnail">
-                                <PlayCircle size={48} className="play-icon" />
-                            </div>
-                            <div className="video-info">
-                                <h4>Understanding the NVQ Framework</h4>
-                                <p className="text-muted text-sm mt-1">5 mins watch</p>
+                    {[
+                        {
+                            id: "w_YFEKode6M",
+                            title: "AETI Orugodawatta Video",
+                        },
+                        {
+                            id: "cDeW1z1W7es",
+                            title: "“Be Pro” - VTA Corporate Profile",
+                        },
+                        {
+                            id: "AqSU2UW2V2g",
+                            title: "German Tech ගැන ඔබ දැනුවත්ද?",
+                        }
+                    ].map(video => (
+                        <div key={video.id} className="video-card box-shadow-sm flex flex-col">
+                            <iframe 
+                                className="w-full h-48 bg-gray-100"
+                                src={`https://www.youtube.com/embed/${video.id}`} 
+                                title={video.title} 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowFullScreen
+                            ></iframe>
+                            <div className="video-info flex-grow">
+                                <h4>{video.title}</h4>
                             </div>
                         </div>
                     ))}

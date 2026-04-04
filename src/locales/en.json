@@ -405,7 +405,12 @@
         "Engineering": "Engineering",
         "Business": "Business",
         "Healthcare": "Healthcare",
-        "Creative": "Creative"
+        "Creative": "Creative",
+        "Vocational Training": "Vocational Training",
+        "GCE A/L": "GCE A/L",
+        "Professional Qualification Courses": "Professional Qualification Courses",
+        "Vocational Qualifications": "Vocational Qualifications",
+        "University Education": "University Education"
       },
       "back": "Back",
       "next": "Show My Pathways"

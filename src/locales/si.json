@@ -405,7 +405,12 @@
         "Engineering": "ඉංජිනේරු",
         "Business": "ව්‍යාපාර",
         "Healthcare": "සෞඛ්‍ය සේවා",
-        "Creative": "නිර්මාණාත්මක"
+        "Creative": "නිර්මාණාත්මක",
+        "Vocational Training": "වෘත්තීය පුහුණු",
+        "GCE A/L": "අ.පො.ස. උ/පෙ",
+        "Professional Qualification Courses": "වෘත්තීය සුදුසුකම් පාචමාලා",
+        "Vocational Qualifications": "වෘත්තීය සුදුසුකම්",
+        "University Education": "විශ්වවිද්‍යාල අද්‍යාපනය"
       },
       "back": "පෙර",
       "next": "මගේ මාර්ග පෙන්වන්න"

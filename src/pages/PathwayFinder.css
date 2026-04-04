@@ -267,3 +267,45 @@
     font-size: 0.925rem;
     line-height: 1.6;
 }
+
+/* ── Vocational Training Result Card ──────────── */
+.vocational-card {
+    border-left: 4px solid var(--primary);
+    background: linear-gradient(135deg, #F8FAFF 0%, #FFFFFF 100%);
+}
+
+.vocational-courses-list {
+    list-style: none;
+    padding: 0.5rem 0 0 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem 1.5rem;
+}
+
+@media (max-width: 540px) {
+    .vocational-courses-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.vocational-course-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.45rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    padding: 0.2rem 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
+}
+
+.vocational-course-item:last-child {
+    border-bottom: none;
+}
+
+.course-bullet {
+    color: var(--primary);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    opacity: 0.75;
+}
