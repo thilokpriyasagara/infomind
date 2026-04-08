@@ -5,7 +5,7 @@ import {
     ArrowRight, Map, Eye, Compass, BookOpen,
     CheckCircle, Settings, Monitor, HeartPulse, Building, Coffee, Leaf, Palette,
     BarChart2, Globe, CalendarCheck, Lightbulb, Star, ChevronRight, GraduationCap,
-    TrendingUp, Users, FileText
+    TrendingUp, Users, FileText, Flame, Quote
 } from 'lucide-react';
 import HeroBanner from '../components/layout/HeroBanner';
 import './Home.css';
@@ -179,45 +179,92 @@ const Home: React.FC = () => {
             <section className="stories-section">
                 <div className="container">
                     <div className="section-label">
-                        <Star size={16} /> Stories
+                        <Star size={16} /> Success Stories
                     </div>
                     <h2 className="section-heading">{t('home.success_title')}</h2>
+                    <p className="section-sub">Real stories from alumni who turned vocational training into global careers.</p>
 
-                    <div className="stories-grid">
-                        <div className="story-card-premium">
-                            <div className="story-stars">
-                                {[...Array(5)].map((_, i) => <Star key={i} size={14} className="filled-star" />)}
+                    <div className="stories-grid-v2">
+                        {/* ── Story Card 1: Imesh Abeysundara ────────── */}
+                        <div className="story-card-v2">
+                            <div className="story-card-image">
+                                <img src="/success_story_2.jpeg" alt="Imesh Abeysundara – Culinary Entrepreneur" />
+                                <div className="story-card-image-overlay" />
                             </div>
-                            <p className="story-quote">"{t('home.success_quote_1')}"</p>
-                            <div className="story-author">
-                                <div className="story-avatar">S</div>
-                                <div>
-                                    <strong>School Leaver</strong>
-                                    <span>Sri Lanka</span>
+                            <div className="story-card-body">
+                                <div className="story-card-badge">
+                                    <Coffee size={14} />
+                                    <span>Culinary Entrepreneur</span>
+                                </div>
+                                <h3 className="story-card-name">Imesh Abeysundara</h3>
+                                <p className="story-card-subtitle">From Dubai Kitchens to Sri Lankan Entrepreneur</p>
+                                <blockquote className="story-card-quote">
+                                    "My journey started with a simple passion for cooking, which eventually led me to the fast-paced, high-pressure commercial kitchens of Dubai. For 12 years, I worked in top-tier restaurants, mastering the culinary arts. Today, I've brought all that international experience back home to Sri Lanka to build my own restaurant."
+                                </blockquote>
+                                <div className="story-card-takeaway">
+                                    <Quote size={16} className="takeaway-quote-icon" />
+                                    <p>A vocational skill like the culinary arts, paired with discipline and hard work, can take you around the world.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="story-card-premium">
-                            <div className="story-stars">
-                                {[...Array(5)].map((_, i) => <Star key={i} size={14} className="filled-star" />)}
+
+                        {/* ── Story Card 2: Nuri Dissanayake ────────── */}
+                        <div className="story-card-v2">
+                            <div className="story-card-image">
+                                <img src="/success_story_3.png" alt="Nuri Dissanayake – Welding Specialist & Mentor" />
+                                <div className="story-card-image-overlay" />
                             </div>
-                            <p className="story-quote">"{t('home.success_quote_2')}"</p>
-                            <div className="story-author">
-                                <div className="story-avatar">A</div>
-                                <div>
-                                    <strong>A/L Graduate</strong>
-                                    <span>Sri Lanka</span>
+                            <div className="story-card-body">
+                                <div className="story-card-badge">
+                                    <Flame size={14} />
+                                    <span>Welding Specialist & Mentor</span>
+                                </div>
+                                <h3 className="story-card-name">Nuri Dissanayake</h3>
+                                <p className="story-card-subtitle">From NAITA Sparks to Global Engineering Projects</p>
+                                <blockquote className="story-card-quote">
+                                    "My journey began with the sparks of a welding torch at NAITA. That solid technical foundation gave me the confidence to move from a local workshop to specializing in advanced, high-demand fields like underwater welding and robotic systems on massive global projects. Today, I'm proud to mentor future engineers."
+                                </blockquote>
+                                <div className="story-card-takeaway">
+                                    <Quote size={16} className="takeaway-quote-icon" />
+                                    <p>Focus on mastering your skills - they can take you to depths and heights you never imagined.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="story-cta-card">
-                            <GraduationCap className="story-cta-icon" size={48} />
-                            <h3>Your Story Starts Here</h3>
-                            <p>Thousands of students found their path. Discover yours today.</p>
-                            <Link to="/pathway-finder" className="cta-btn cta-btn-white">
-                                Start Your Journey <ArrowRight size={16} />
-                            </Link>
+
+                        {/* ── Story Card 3: Chameera Dushan ────────── */}
+                        <div className="story-card-v2">
+                            <div className="story-card-image">
+                                <img src="/success_story_1.jpeg" alt="Chameera Dushan – Heavy Vehicle Mechanic in Romania" />
+                                <div className="story-card-image-overlay" />
+                            </div>
+                            <div className="story-card-body">
+                                <div className="story-card-badge">
+                                    <Settings size={14} />
+                                    <span>Heavy Vehicle Mechanic</span>
+                                </div>
+                                <h3 className="story-card-name">Chameera Dushan</h3>
+                                <p className="story-card-subtitle">From CGTTI to Europe: Mastering Heavy Vehicle Mechanics</p>
+                                <blockquote className="story-card-quote">
+                                    "My career began at CGTTI, and today I work as a Heavy Vehicle Mechanic in Romania, Europe. Working on advanced trucks like MAN and Scania requires strict diagnostics and precision. The world-class, hands-on training I received at CGTTI built the technical foundation and discipline I needed to thrive in this highly systematic European environment."
+                                </blockquote>
+                                <div className="story-card-takeaway">
+                                    <Quote size={16} className="takeaway-quote-icon" />
+                                    <p>Master your practical skills, and the global industry will always have a place for you.</p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+                    {/* ── Motivational CTA Banner ────────── */}
+                    <div className="story-cta-card-v2">
+                        <GraduationCap className="story-cta-icon" size={48} />
+                        <div className="story-cta-text">
+                            <h3>Your Success Story Starts Here</h3>
+                            <p>These alumni turned their vocational training into global careers. Your path awaits - take the first step today.</p>
+                        </div>
+                        <Link to="/pathway-finder" className="cta-btn cta-btn-white">
+                            Start Your Journey <ArrowRight size={16} />
+                        </Link>
                     </div>
                 </div>
             </section>

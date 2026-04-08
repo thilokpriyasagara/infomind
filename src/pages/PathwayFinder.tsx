@@ -326,7 +326,7 @@ const PathwayFinder: React.FC = () => {
     };
 
     return (
-        <div className="container mt-8 pathway-container">
+        <div className="container pathway-container">
             <div className="wizard-header text-center">
                 <h1 className="section-title mb-2">{t('pathwayFinder.title')}</h1>
                 <p className="text-secondary mb-8">{t('pathwayFinder.subtitle')}</p>

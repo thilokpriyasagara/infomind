@@ -217,8 +217,8 @@ const Resources: React.FC = () => {
     const [openTimeline, setOpenTimeline] = useState<number | null>(0);
 
     return (
-        <div className="container page-wrapper">
-            <div className="page-header">
+        <div className="container page-wrapper" style={{ paddingTop: '2rem' }}>
+            <div className="page-header" style={{ paddingTop: '1rem' }}>
                 <span className="section-label">Resources</span>
                 <h1 className="section-title">Awareness &amp; Guidance Resources</h1>
                 <p>Explore articles, videos, and FAQs designed to help you make the right choice for your future.</p>

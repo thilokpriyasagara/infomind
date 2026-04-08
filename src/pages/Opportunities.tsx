@@ -69,8 +69,8 @@ const Opportunities: React.FC = () => {
     );
 
     return (
-        <div className="container page-wrapper">
-            <div className="page-header">
+        <div className="container page-wrapper" style={{ paddingTop: '2rem' }}>
+            <div className="page-header" style={{ paddingTop: '1rem' }}>
                 <span className="section-label">Opportunities</span>
                 <h1 className="section-title">{t('opportunities.title')}</h1>
                 <p>{t('opportunities.subtitle')}</p>
