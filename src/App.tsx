@@ -10,6 +10,7 @@ import Resources from './pages/Resources';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ui/ScrollToTop';
+import Chatbot from './components/ui/Chatbot';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Layout>
+        <Chatbot/>
       </Router>
     </LanguageProvider>
   );
